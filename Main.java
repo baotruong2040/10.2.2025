@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JFileChooser;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
+//import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -37,11 +37,11 @@ public class Main {
         JTextArea textArea = new JTextArea();
         textArea.setWrapStyleWord(true);
         textArea.setLineWrap(true);
-        textArea.setEditable(false);
+        textArea.setEditable(true);
         textArea.setFont(new Font("Arial", Font.PLAIN, 16));
         JScrollPane scrollPane = new JScrollPane(textArea);
 
-        JLabel label = new JLabel("File Reader");
+        //JLabel label = new JLabel("File Reader");
         scrollPane.setBorder(javax.swing.BorderFactory.createEmptyBorder(30, 15, 15, 15));
 
         frame.add(topPanel, BorderLayout.NORTH);
